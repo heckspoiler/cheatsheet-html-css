@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">  
 </head>
 
 <body>
 
+    <div id="banner-left">
+        <p id="japanese-text-left">私のホームページへようこそ  </p>
+        <p id="japanese-text-right">私のホームページへようこそ  </p>
+    </div>
     <div class="main-title">
         <h1>HTML & CSS Cheatsheet for everything you need to know</h1>
     </div>
@@ -33,7 +35,7 @@
             Properties. Here's an overlook:
         </p>
 
-        <table class="heading">
+        <table class="all-tables">
             <tr class="table-heading">
                 <th>Name</th>
                 <th>Usage</th>
@@ -79,7 +81,7 @@
         <p class="all-title-paragraphs">
             In the following section you'll see some commonly used tags in HTML and some additional information. 
         </p>
-        <table class="tags">
+        <table class="all-tables">
             <tr class="table-tags">
                 <th>Name</th>
                 <th>Usage</th>
@@ -87,54 +89,64 @@
             </tr>
             <tr class="table-row">
                 <td class="table-data">The div-Tag</td>
-                <td class="table-data">The <code>div</code> tag defines a division or a section in an HTML document. The
-                    <div> tag is used as a container for HTML elements - which is then styled with CSS or manipulated
-                        with JavaScript. The <code>div </code>tag is easily styled by using the class or id attribute
+                <td class="table-data">The <<code>div</code>> tag defines a division or a section in an HTML document. The
+                    <<code>div</code>> tag is used as a container for HTML elements - which is then styled with CSS or manipulated
+                        with JavaScript. The <<code>div</code>> tag is easily styled by using the class or id attribute
                 </td>
-                <td class="table-data"><code>ul</code></td>
+                <td class="table-data"><<code>ul</code>></td>
             </tr>
             <tr class="table-row tr-grey">
                 <td class="table-data">The span-Tag</td>
-                <td class="table-data">The <code>span</code> tag is an inline container used to mark up a part of a text, or a part of a document. The <code>span </code>tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.</td>
-                <td class="table-data"><code>span</code></td>
+                <td class="table-data">The <<code>span</code>> tag is an inline container used to mark up a part of a text, or a part of a document. The <<code>span</code>> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.</td>
+                <td class="table-data"><<code>span</code>></td>
             </tr>
             <tr class="table-row">
                 <td class="table-data">The p-Tag</td>
-                <td class="table-data">The <code>p</code> tag defines a paragraph. Browsers automatically add a single blank line before and after each <code>p</code> element. Tip: Use CSS to style paragraphs.</td>
-                <td class="table-data"><code>p</code></td>
+                <td class="table-data">The <<code>p</code>> tag defines a paragraph. Browsers automatically add a single blank line before and after each <<code>p</code>> element. Tip: Use CSS to style paragraphs.</td>
+                <td class="table-data"><<code>p</code>></td>
             </tr>
             <tr class="table-row tr-grey">
                 <td class="table-data">The section-Tag</td>
-                <td class="table-data">In HTML, a section is a semantic element for creating standalone sections in a web page. These sections should be made up of related content, like contact information. The section element should only be used if there isn't a more specific element to represent the related content.</td>
-                <td class="table-data"><code>section</code></td>
+                <td class="table-data">In HTML, a <<code>section</code>> is a semantic element for creating standalone sections in a web page. These sections should be made up of related content, like contact information. The section element should only be used if there isn't a more specific element to represent the related content.</td>
+                <td class="table-data"><<code>section</code>></td>
             </tr>
             <tr class="table-row">
                 <td class="table-data">The article-Tag</td>
-                <td class="table-data">The <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</td>
-                <td class="table-data"><code>article</code></td>
+                <td class="table-data">The <<code>article</code>> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</td>
+                <td class="table-data"><<code>article</code>></td>
             </tr>
             <tr class="table-row tr-grey">
                 <td class="table-data">The head-Tag</td>
-                <td class="table-data">The <code>head</code> element is a container for metadata (data about data) and is placed between the <code>html</code> tag and the <code>body</code> tag. Metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.</td>
-                <td class="table-data"><code>head</code></td>
+                <td class="table-data">The <<code>head</code>> element is a container for metadata (data about data) and is placed between the <<code>html</code>> tag and the <<code>body</code>> tag. Metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, scripts, and other meta information.</td>
+                <td class="table-data"><<code>head</code>></td>
             </tr>
             <tr class="table-row">
                 <td class="table-data">The meta-Tag</td>
-                <td class="table-data">The <code>meta</code> tag defines metadata about an HTML document. Metadata is data (information) about data. <code>meta</code> tags always go inside the <code>head</code> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.</td>
-                <td class="table-data"><code>meta</code></td>
+                <td class="table-data">The <<code>meta</code>> tag defines metadata about an HTML document. Metadata is data (information) about data. <<code>meta</code>> tags always go inside the <<code>head</code>> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.</td>
+                <td class="table-data"><<code>meta</code>></td>
             </tr>
             <tr class="table-row tr-grey">
                 <td class="table-data">The title-Tag</td>
-                <td class="table-data"></td>
-                <td class="table-data"><code></code></td>
+                <td class="table-data">The <<code>title</code>> tag in HTML is used to define the title of HTML document. It sets the title in the browser toolbar. It provides the title for the web page when it is added to favorites. It displays the title for the page in search engine results.</td>
+                <td class="table-data"><<code>title</code>></td>
             </tr>
             <tr class="table-row">
                 <td class="table-data">The link-Tag</td>
-                <td class="table-data"></td>
-                <td class="table-data"><code></code></td>
+                <td class="table-data">The <<code>link</code>> tag defines the relationship between the current document and an external resource. The <<code>link</code>> tag is most often used to link to external style sheets or to add a favicon to your website. The <<code>link</code>> element is an empty element, it contains attributes only.</td>
+                <td class="table-data"><<code>link</code>></td>
             </tr>
             <tr class="table-row tr-grey">
                 <td class="table-data">The script-Tag</td>
+                <td class="table-data">The <code>script</code> tag is used to embed a client-side script (JavaScript). The <<code>script</code>> element either contains scripting statements, or it points to an external script file through the src attribute. Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.</td>
+                <td class="table-data"><<code>script</code>></td>
+            </tr>
+            <tr class="table-row">
+                <td class="table-data">The form-Tag</td>
+                <td class="table-data">The <code>form </code>tag is used to create an HTML form for user input.</td>
+                <td class="table-data"><<code>form</code>></td>
+            </tr>
+            <!--<tr class="table-row tr-grey">
+                <td class="table-data"></td>
                 <td class="table-data"></td>
                 <td class="table-data"><code></code></td>
             </tr>
@@ -143,38 +155,32 @@
                 <td class="table-data"></td>
                 <td class="table-data"><code></code></td>
             </tr>
-            <tr class="table-row tr-grey">
-                <td class="table-data"></td>
-                <td class="table-data"></td>
-                <td class="table-data"><code></code></td>
-            </tr>
-            <tr class="table-row">
-                <td class="table-data"></td>
-                <td class="table-data"></td>
-                <td class="table-data"><code></code></td>
-            </tr>
+        -->
         </table>
 
     </div>
 
     <!--Table Section-->
     <div class="cheatsheet-table all-sections">
-        <h2 class="section-tags" id="heading-tags">Tags</h2>
-        <table class="tags">
+        <h2 class="section-tags" id="heading-tags">Tables</h2>
+        <p class="all-title-paragraphs">
+            In the following section we'll take a deeper look into tables and its components.
+        </p>
+        <table class="all-tables">
             <tr class="table-tags">
                 <th>Name</th>
                 <th>Usage</th>
                 <th>Syntax</th>
             </tr>
             <tr class="table-row">
-                <td class="table-data"></td>
-                <td class="table-data"></td>
-                <td class="table-data"><code></code></td>
+                <td class="table-data">The table-Tag</td>
+                <td class="table-data">The HTML <code>table</code> is used for arranging data (such as text, images, links etc.) into the tabular design — basically, rows and columns.</td>
+                <td class="table-data"><code>table</code></td>
             </tr>
             <tr class="table-row tr-grey">
-                <td class="table-data"></td>
-                <td class="table-data"></td>
-                <td class="table-data"><code></code></td>
+                <td class="table-data">The tr-Tag</td>
+                <td class="table-data">The <code>tr</code> tag defines a row in an HTML table. A <code>tr</code> element contains one or more <code>th </code>or <code>td </code>elements.</td>
+                <td class="table-data"><code>tr</code></td>
             </tr>
             <tr class="table-row">
                 <td class="table-data"></td>
@@ -203,7 +209,7 @@
     <!--Box Model Section-->
     <div class="cheatsheet-boxmodel all-sections">
         <h2 class="section-tags" id="heading-tags">Tags</h2>
-        <table class="tags">
+        <table class="all-tables">
             <tr class="table-tags">
                 <th>Name</th>
                 <th>Usage</th>
@@ -247,7 +253,7 @@
     <div class="cheatsheet-links all-sections">
         <h2 class="section-tags" id="heading-tags">Tags</h2>
         <table class="tags">
-            <tr class="table-tags">
+            <tr class="all-tables">
                 <th>Name</th>
                 <th>Usage</th>
                 <th>Syntax</th>
@@ -289,7 +295,7 @@
     <!--Media Section-->
     <div class="cheatsheet-media all-sections">
         <h2 class="section-tags" id="heading-tags">Tags</h2>
-        <table class="tags">
+        <table class="all-tables">
             <tr class="table-tags">
                 <th>Name</th>
                 <th>Usage</th>
@@ -332,7 +338,7 @@
     <!--Input Section-->
     <div class="cheatsheet-input all-sections">
         <h2 class="section-tags" id="heading-tags">Tags</h2>
-        <table class="tags">
+        <table class="all-tables">
             <tr class="table-tags">
                 <th>Name</th>
                 <th>Usage</th>

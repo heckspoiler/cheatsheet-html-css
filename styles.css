@@ -1,155 +1,136 @@
 
-/* general styling */
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 5px;
+}
 
-body:not(.main-title) {
+
+body {
     display: flex;
-    justify-content: center;
+    position: relative;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-::selection {
-    color: yellow;
-    background-color: #e749e2;
-}
-
-*:not(code) {
-    font-family: 'Open Sans', sans-serif;
-}
-
-.main-title {
-
-    position: absolute;
-    top: 40px;
-    left: 30px;
-    margin-bottom: 150px;
-    width: 300px;
-    font-size: 50px;
-    font-weight: 5;
-    color: #e749e2;
-    border-right: 1px dotted #000;
-    border-bottom: 1px solid;
-    border-bottom-color:  #e749e2 ;
-    animation: cursor 1s infinite step-end, typing 12s infinite steps(48);
-    white-space: nowrap;
-    overflow: hidden;
+    background-color: #82E0AA ;
     
-  }
 
-  @keyframes cursor{
-    0%, 100%{border-color: transparent;}
-    50%{border-color: #e749e2;}
-  }
-  
-  @keyframes typing{
-    0%{ width: 0ch} /*Text is hidden*/
-    30%{ width: 16ch;} /*The enitre header will be typed out*/
-    80%{ width: 48ch;} /*Text stays visible*/
-    90%{ width: 0ch;} /*Text is deleted*/
-    100%{ width: 0ch;} /*Text stays hidden*/
-  }
-
-
-h1 {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: 5px;
-    text-align: center;
-    display: inline;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 25px;
-    color:darkgray;
-    letter-spacing: 5px;
-}
-
-h3 {
-    font-weight: bold;
-    font-size: 30px;
-    color: 50px;
-    color: white;
-    letter-spacing: 10px;
-    border: 1px solid blue;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 20px;
-    padding: 30px;
-    background-color: blue;
-    box-shadow: 0px 5px 5px grey;
-}
-
-.html-title {
-    position: absolute;
-    top: 180px;
-    left: 50%;
-    
-   
-    
 }
 
 .all-sections {
-
-    display: flexbox;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    background-color: grey;
-    height: max-content;
-    width: max-content;
-    padding: 40px;
-    margin: 400px 20px 20px 20px;
-    border: black dotted 1px;
-    max-width: 40%;
-    border-radius: 5%;
-    box-shadow: 0px 5px 5px lightgrey;
-    opacity: %;
-    
-    
-}
-
-.all-sections:hover {
-    background-color: white;
-    opacity: 100%;
-    border-width: 2px;
-}
-
-.all-sections:hover h2:hover {
-    color: black;
-}
-
-
-/* Tables */
-
-th, td {
-    padding: 20px;
-    text-align: center;
-    border: black solid 0.5px;
-    border-radius: 3%;
-    width: max-content;
-
-}
-
-.heading-paragraph {
+   
+    position:relative;
+    width: 50%;
     margin: 40px;
+    padding: 40px;
+    align-items: center;
+    background-color: white;
+    align-content: center;
+}
+.all-tables{
+    margin: 20px auto;
 }
 
-tr {
-    width: fit-content;
+
+td {
+    padding: 20px;
+    border-color: red;
+    
 }
 
-.tr-grey {
-    background-color: gray;
-    opacity: 60%;
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #F2F3F4;
+}
+
+tbody {
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+#japanese-text-left {
+    
+    position:fixed;
+    left: 0px;
+    width: auto;
+    height: 100%;
+    background-color: yellow;    
+    align-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    border: none;
+    position: absolute;
+    text-align:left;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 50px;
+    border: 1px solid black;
+    padding-top: 150px;
+}
+
+#japanese-text-right {
+    
+    position:fixed;
+    right: 0px;
+    width: auto;
+    height: 100%;
+    background-color: yellow;    
+    align-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    border: none;
+    position: absolute;
+    text-align:left;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 50px;
+    border: 1px solid black;
+    padding-top: 150px;
+}
+
+h1 {
+    font-size: 40px;
     color: white;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 2px black;
+    border-right: 1px solid transparent;
+    border-radius: 0%;
+    animation-name: blink ;
+    animation-duration: .5s ;
+    animation-timing-function: step-end ;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
 }
 
-/* Headings Section */
+@keyframes blink { 
+    50% { border-color: black; } 
+ }
 
-.cheatsheet-headings {
-    margin-top: 100px;
-    border: 1px black solid;
-    margin-top: 60px;
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.all-title-paragraphs {
+    text-align: center;
+}
+
+.title-css-html {
+    text-align: center;
+    height: auto;
+    width: auto;
+    border: solid 1px white;
+    color: white;
+    font-size: 40px;
+    padding: 30px;
+    box-shadow: 1px 1px 2px black;
+    border-radius: 5px;
+}
+
+td, tr, th{
+    border: 1px solid black; 
+    margin-top: 5px;
+    text-align: center;
+}
+
+th, .tr-grey {
+    background-color: lightgray;
 }
